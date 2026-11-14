@@ -4,7 +4,7 @@ import {existsSync,writeFileSync,mkdirSync} from 'node:fs';
 import {resetDatabase} from '../database/setup.js';
 import {pool} from '../src/server/db.js';
 import * as r from '../src/server/repository.js';
-async function input(id:number){const p=await r.profile(id);return {...p,interests:p.interests.map((i:any)=>i.id)};}
+async function input(id:number):Promise<any>{const p=await r.profile(id);return {...p,interests:p.interests.map((i:any)=>i.id)};}
 after(async()=>{await pool.end()});
 test('MySQL integration: complete deterministic demonstration and failure cases',async t=>{
  await resetDatabase();
