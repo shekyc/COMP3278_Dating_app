@@ -1,0 +1,21 @@
+digraph G {rankdir=LR;graph [bgcolor="#f8f6f1", pad="0.45", nodesep="0.45", ranksep="0.8", fontname="Arial", label="CHEMISTRY  /  RELATIONAL MODEL", labelloc="t", fontsize=24, fontcolor="#482d3c"]; node [shape=box, style="rounded,filled", fillcolor="#fffaf3", color="#c8aca0", fontname="Arial", fontsize=16, fontcolor="#482d3c", margin="0.2,0.14"]; edge [color="#ae8979", fontname="Arial", fontsize=11, fontcolor="#806960", arrowsize=.6];
+users [label="users\n────────────────\nid PK\nname\ncreated_at"];
+profiles [label="profiles\n────────────────\nuser_id PK FK\nage (21–99)\ngender / presentation\nbio / occupation / district\nweekend / social / image\nphotos JSON (nullable gallery)"];
+preferences [label="preferences\n────────────────\nuser_id PK FK\nmin_age / max_age\nweekend / social"];
+preference_genders [label="preference_genders\n────────────────\nuser_id PK FK\ngender PK"];
+interests [label="interests\n────────────────\nid PK\nname UNIQUE"];
+user_interests [label="user_interests\n────────────────\nuser_id PK FK\ninterest_id PK FK"];
+likes [label="likes\n────────────────\nfrom_user PK FK\nto_user PK FK\ncreated_at\nCHECK from_user ≠ to_user"];
+matches [label="matches\n────────────────\nid PK\nuser_a FK / user_b FK\ncreated_at\nUNIQUE (user_a,user_b)\nUNIQUE (id,user_a,user_b)\nCHECK user_a < user_b"];
+messages [label="messages\n────────────────\nid PK\nmatch_id + user_a + user_b FK\nsender_id FK\nbody / created_at\nCHECK sender in pair"];
+saved_profiles [label="saved_profiles\n────────────────\nuser_id PK FK\nsaved_user_id PK FK\ncreated_at\nCHECK users differ"];
+users -> profiles [label="1 : 0..1"];
+users -> preferences [label="1 : 0..1"];
+preferences -> preference_genders [label="1 : 0..many"];
+users -> user_interests [label="1 : 0..many"];
+interests -> user_interests [label="1 : 0..many"];
+users -> likes [label="1 : 0..many in each direction"];
+users -> matches [label="1 : 0..many for each participant"];
+matches -> messages [label="1 : 0..many"];
+users -> messages [label="1 : 0..many as sender"];
+users -> saved_profiles [label="1 : 0..many for each role"];}

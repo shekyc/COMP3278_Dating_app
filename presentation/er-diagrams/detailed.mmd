@@ -1,0 +1,76 @@
+erDiagram
+ USERS ||--o| PROFILES : "has (application requires one)"
+ USERS ||--o| PREFERENCES : "has (application requires one)"
+ PREFERENCES ||--o{ PREFERENCE_GENDERS : "accepts"
+ USERS ||--o{ USER_INTERESTS : "chooses"
+ INTERESTS ||--o{ USER_INTERESTS : "classifies"
+ USERS ||--o{ LIKES : "from_user"
+ USERS ||--o{ LIKES : "to_user"
+ USERS ||--o{ MATCHES : "user_a"
+ USERS ||--o{ MATCHES : "user_b"
+ MATCHES ||--o{ MESSAGES : "owns via composite FK"
+ USERS ||--o{ MESSAGES : "sender_id"
+ USERS ||--o{ SAVED_PROFILES : "user_id"
+ USERS ||--o{ SAVED_PROFILES : "saved_user_id"
+ USERS {
+  int id PK
+  varchar name
+  timestamp created_at
+ }
+ PROFILES {
+  int user_id PK,FK
+  tinyint age "21 to 99"
+  enum gender
+  enum presentation
+  varchar bio
+  varchar occupation
+  varchar district
+  enum weekend
+  enum social
+  varchar image
+  json photos "nullable gallery array"
+ }
+ PREFERENCES {
+  int user_id PK,FK
+  tinyint min_age
+  tinyint max_age
+  enum weekend
+  enum social
+ }
+ PREFERENCE_GENDERS {
+  int user_id PK,FK
+  enum gender PK
+ }
+ INTERESTS {
+  int id PK
+  varchar name UK
+ }
+ USER_INTERESTS {
+  int user_id PK,FK
+  int interest_id PK,FK
+ }
+ LIKES {
+  int from_user PK,FK
+  int to_user PK,FK
+  timestamp created_at
+ }
+ MATCHES {
+  int id PK
+  int user_a FK "less than user_b"
+  int user_b FK "UNIQUE pair with user_a"
+  timestamp created_at
+ }
+ MESSAGES {
+  int id PK
+  int match_id FK "composite FK with user_a and user_b"
+  int user_a FK
+  int user_b FK
+  int sender_id FK "must equal user_a or user_b"
+  varchar body
+  timestamp created_at
+ }
+ SAVED_PROFILES {
+  int user_id PK,FK
+  int saved_user_id PK,FK
+  timestamp created_at
+ }

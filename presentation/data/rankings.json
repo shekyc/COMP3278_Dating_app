@@ -12,7 +12,12 @@
       "district": "Sheung Wan",
       "weekend": "Adventure",
       "social": "Balanced",
-      "image": "/profiles/02.png",
+      "image": "/profiles/02.webp",
+      "photos": [
+        "/profiles/02.webp",
+        "/profiles/02-2.webp",
+        "/profiles/02-3.webp"
+      ],
       "shared_count": 5,
       "shared_interests": "Hiking, Photography, Jazz, Museums, Coffee",
       "interests": "Hiking, Photography, Jazz, Museums, Coffee",
@@ -37,7 +42,12 @@
       "district": "Sheung Wan",
       "weekend": "Cozy",
       "social": "Quiet",
-      "image": "/profiles/03.png",
+      "image": "/profiles/03.webp",
+      "photos": [
+        "/profiles/03.webp",
+        "/profiles/03-2.webp",
+        "/profiles/03-3.webp"
+      ],
       "shared_count": 1,
       "shared_interests": "Coffee",
       "interests": "Coffee, Gaming, Cooking, Cinema, Board games",
@@ -64,7 +74,12 @@
       "district": "Sheung Wan",
       "weekend": "Cozy",
       "social": "Quiet",
-      "image": "/profiles/03.png",
+      "image": "/profiles/03.webp",
+      "photos": [
+        "/profiles/03.webp",
+        "/profiles/03-2.webp",
+        "/profiles/03-3.webp"
+      ],
       "shared_count": 5,
       "shared_interests": "Coffee, Gaming, Cooking, Cinema, Board games",
       "interests": "Coffee, Gaming, Cooking, Cinema, Board games",
@@ -89,7 +104,12 @@
       "district": "Sheung Wan",
       "weekend": "Adventure",
       "social": "Balanced",
-      "image": "/profiles/02.png",
+      "image": "/profiles/02.webp",
+      "photos": [
+        "/profiles/02.webp",
+        "/profiles/02-2.webp",
+        "/profiles/02-3.webp"
+      ],
       "shared_count": 1,
       "shared_interests": "Coffee",
       "interests": "Hiking, Photography, Jazz, Museums, Coffee",
