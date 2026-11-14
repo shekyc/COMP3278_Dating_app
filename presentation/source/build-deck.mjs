@@ -4,6 +4,7 @@ import {pathToFileURL,fileURLToPath} from 'node:url';
 import {createRequire} from 'node:module';
 import os from 'node:os';
 const runtimeModules=process.env.RUNTIME_NODE_MODULES||path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules');
+process.env.RUNTIME_NODE_MODULES=runtimeModules;
 const runtimeRequire=createRequire(path.join(runtimeModules,'../__loader.cjs'));
 const {Presentation,PresentationFile}=await import(pathToFileURL(runtimeRequire.resolve('@oai/artifact-tool')).href);
 const sharp=runtimeRequire('sharp');

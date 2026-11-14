@@ -1,1 +1,43 @@
-{"name":"chemistry","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"tsx watch src/server/index.ts","build":"tsc --noEmit && vite build","start":"tsx src/server/index.ts","db:setup":"tsx database/setup.ts","db:reset":"tsx database/setup.ts","test":"tsx --test tests/integration.test.ts","seed:generate":"tsx database/seed-generator.ts"},"dependencies":{"react":"19.1.1","react-dom":"19.1.1","express":"5.1.0","mysql2":"3.14.5","dotenv":"17.2.2","lucide-react":"0.468.0","zod":"3.25.76"},"devDependencies":{"@types/react":"19.1.13","@types/react-dom":"19.1.9","@types/express":"5.0.3","@types/node":"22.18.6","typescript":"5.9.2","tsx":"4.20.5","vite":"6.3.6","@vitejs/plugin-react":"4.7.0"}}
+{
+  "name": "chemistry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx src/server/index.ts",
+    "db:setup": "tsx database/setup.ts",
+    "db:reset": "tsx database/setup.ts",
+    "test": "node --import tsx --test tests/integration.test.ts",
+    "seed:generate": "tsx database/seed-generator.ts",
+    "format": "prettier --write src database tests scripts index.html vite.config.ts",
+    "test:http": "node tests/http.test.mjs",
+    "test:assets": "node scripts/validate-assets.mjs",
+    "test:presentation": "node --import tsx tests/presentation-sql.ts"
+  },
+  "dependencies": {
+    "dotenv": "17.2.2",
+    "express": "5.1.0",
+    "lucide-react": "0.468.0",
+    "mysql2": "3.14.5",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.3",
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "4.7.0",
+    "prettier": "3.6.2",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vite": "6.3.6"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.25.0"
+}
