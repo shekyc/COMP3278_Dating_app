@@ -15,6 +15,7 @@ CREATE TABLE profiles (
  weekend ENUM('Adventure','Creative','Cozy') NOT NULL,
  social ENUM('Balanced','Outgoing','Quiet') NOT NULL,
  image VARCHAR(160) NOT NULL,
+ photos JSON NULL,
  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 CREATE TABLE preferences (
