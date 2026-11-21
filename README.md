@@ -53,15 +53,14 @@ Open **Local Demo** and inspect the database counts. A fresh database contains *
 | Send a message, then reload the conversation. | The saved message is still visible. |
 | Unmatch Ben and confirm. | The match count returns to 20. The conversation and both directional likes are removed. |
 
-## Source and assessment materials
+## Source files
 
 | Material | Location |
 | --- | --- |
 | React frontend and Express API | [src](src/) |
 | MySQL table definitions, keys and constraints | [schema.sql](database/schema.sql) |
 | Initial dataset and deterministic generator | [seed.sql](database/seed.sql) · [seed-generator.ts](database/seed-generator.ts) |
-| Recommendation query and executable SQL examples | [discovery.sql](database/queries/discovery.sql) · [presentation SQL](presentation/sql/) |
-| Presentation and supporting materials | [presentation](presentation/) |
+| Recommendation query | [discovery.sql](database/queries/discovery.sql) |
 | Integration tests | [tests](tests/) |
 
 Run `pnpm build` to type-check and compile the application and `pnpm test:assets` to verify the bundled portraits. With a dedicated demo database configured, `pnpm test` runs the integration tests and resets that database.

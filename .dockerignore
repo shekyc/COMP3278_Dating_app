@@ -3,6 +3,4 @@ dist
 .git
 .env
 .local
-presentation
-work
 *.log

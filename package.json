@@ -13,8 +13,7 @@
     "seed:generate": "tsx database/seed-generator.ts",
     "format": "prettier --write src database tests scripts index.html vite.config.ts",
     "test:http": "node tests/http.test.mjs",
-    "test:assets": "node scripts/validate-assets.mjs",
-    "test:presentation": "node --import tsx tests/presentation-sql.ts"
+    "test:assets": "node scripts/validate-assets.mjs"
   },
   "dependencies": {
     "dotenv": "17.2.2",

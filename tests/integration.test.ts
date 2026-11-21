@@ -1,6 +1,5 @@
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resetDatabase } from '../database/setup.js';
 import { pool } from '../src/server/db.js';
 import * as r from '../src/server/repository.js';
@@ -58,7 +57,6 @@ test('MySQL integration: complete deterministic demonstration and failure cases'
     );
   });
   const before = await r.discover(1);
-  let afterRows: any[] = [];
   let matchId = 0;
   await t.test('SQL rankings genuinely respond to interests and preference updates', async () => {
     assert.ok(before.findIndex((x) => x.id === 2) < before.findIndex((x) => x.id === 3));
@@ -69,22 +67,10 @@ test('MySQL integration: complete deterministic demonstration and failure cases'
     p.preferences.weekend = 'Cozy';
     p.preferences.social = 'Quiet';
     await r.saveProfile(1, p);
-    afterRows = await r.discover(1);
+    const afterRows = await r.discover(1);
     assert.equal(afterRows[0].id, 3);
     assert.ok(afterRows.findIndex((x) => x.id === 3) < afterRows.findIndex((x) => x.id === 2));
     assert.equal((await r.profile(1)).preferences.weekend, 'Cozy');
-    mkdirSync('presentation/data', { recursive: true });
-    writeFileSync(
-      'presentation/data/rankings.json',
-      JSON.stringify(
-        {
-          before: before.filter((p) => [2, 3].includes(p.id)),
-          after: afterRows.filter((p) => [2, 3].includes(p.id)),
-        },
-        null,
-        2,
-      ),
-    );
   });
   await t.test('self-like, missing user and ineligible pair rejected', async () => {
     await assert.rejects(r.like(1, 1));
