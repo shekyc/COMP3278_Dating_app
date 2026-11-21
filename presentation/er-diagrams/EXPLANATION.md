@@ -13,9 +13,3 @@ Saved profiles are directional bookmarks with a composite primary key and a self
 `profiles.photos` is an optional JSON array for a small ordered photo gallery. The primary image remains in `image`. It is presentation metadata, not an input to ranking. The interest and preference relationships remain normalized.
 
 All user-owned rows cascade on user deletion. Removing an interest is restricted while associations use it. Unmatch explicitly deletes both directional likes and the match in a transaction; message rows cascade from the match. Saved profiles remain. Repeated unmatch returns 404 because the match is already gone. The app does not expose user deletion.
-
-## One-minute explanation
-
-“Users sit at the centre. Profiles and preferences are one-to-one records. The interest junction table creates a many-to-many relationship without repeated columns. Likes have direction, so two rows are necessary for mutual interest. Matches canonicalise the pair and enforce uniqueness. Each match owns its conversation, and the database verifies that every sender belongs to that match. These keys and constraints keep the UI consistent with stored data.”
-
-Use `simplified.svg` on a projector. Keep `detailed.svg`, `detailed.mmd` and `database/schema.sql` available for questions. Both diagram versions include all ten tables; the simplified version omits column lists.

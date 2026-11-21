@@ -1,4 +1,4 @@
-// Handwritten fictional voices. Presentation and identity are separate seed fields.
+// Fictional biographies. Presentation and identity are separate seed fields.
 export const names = [
   'Alice',
   'Ben',

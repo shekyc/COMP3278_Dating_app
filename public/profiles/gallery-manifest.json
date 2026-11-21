@@ -5,13 +5,11 @@
     "name": "Alice",
     "path": "/profiles/01-2.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Alice. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: walking on a lush Hong Kong hillside path, wearing a sage hiking overshirt and carrying a small film camera, candid full torso with a warm smile. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 207908,
     "sha256": "1c8ce49715b81e865bc213f7d3f05183f6a70cc9df97956a3718d9c344584043",
     "width": 1086,
     "height": 1448,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Alice, gallery image 2"
   },
   {
@@ -20,13 +18,11 @@
     "name": "Alice",
     "path": "/profiles/01-3.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Alice. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: in a sunlit contemporary art gallery, wearing a muted rose blouse, looking toward camera with an open relaxed smile, medium portrait. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 118740,
     "sha256": "c3b1b21386ece85adf2cbe13a0b5024ceefa3f6b549888a6af478cb2c5d96d95",
     "width": 1086,
     "height": 1448,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Alice, gallery image 3"
   },
   {
@@ -35,13 +31,11 @@
     "name": "Ben",
     "path": "/profiles/02-2.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Ben. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: sitting outside a quiet Hong Kong cafe, wearing an ivory linen shirt, smiling toward camera, natural medium portrait. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 151876,
     "sha256": "f50b01dd72e7b626444bea35dcac67e904537a143727221c5417dccbb913eee4",
     "width": 1086,
     "height": 1448,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Ben, gallery image 2"
   },
   {
@@ -50,13 +44,11 @@
     "name": "Ben",
     "path": "/profiles/02-3.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Ben. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: browsing a warmly lit independent art bookshop, wearing a navy cotton shirt, candid waist-up photograph with a small friendly smile. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 134982,
     "sha256": "90983631dd627c6d07461926f1a41af2028985a0b53623e59c548493af14d4a9",
     "width": 1086,
     "height": 1448,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Ben, gallery image 3"
   },
   {
@@ -65,13 +57,11 @@
     "name": "Chris",
     "path": "/profiles/03-2.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Chris. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: in a sunny kitchen shaping bread dough, wearing a forest green tee with cream apron, candid medium portrait looking toward camera. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 139712,
     "sha256": "76dab64c80d29cee2f1a70bc19fad2b2f7e005a2ace4ffbd40f7c80551ae19b7",
     "width": 1024,
     "height": 1536,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Chris, gallery image 2"
   },
   {
@@ -80,13 +70,11 @@
     "name": "Chris",
     "path": "/profiles/03-3.webp",
     "generated": true,
-    "prompt": "Use case: identity-preserve. The reference is an AI-generated fictional adult profile portrait of Chris. Generate a second natural editorial lifestyle photograph of exactly this same fictional adult, preserving facial identity, ethnicity, apparent adult age, hair and eye features. New scene: walking along a leafy harbor promenade at golden hour, wearing a muted rust linen shirt, relaxed medium portrait. Keep this person's recognizable facial structure unchanged. Premium candid photography, gentle warm light and muted earthy palette, realistic skin, vertical composition with one person only. No text, no watermark, no celebrity likeness.",
     "source": "Built-in image generation, identity-preserving edit of the fictional primary portrait.",
     "bytes": 171582,
     "sha256": "831eee6b1cc7f001f0e785a6b296fa7d1429b2bd48b13076cf7e924de765f681",
     "width": 1024,
     "height": 1536,
-    "encoding": "WebP quality 85, original dimensions, no content edits",
     "alt": "Fictional profile photograph of Chris, gallery image 3"
   }
 ]

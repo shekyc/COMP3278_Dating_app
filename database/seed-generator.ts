@@ -111,7 +111,7 @@ const jobs = [
   'Furniture maker',
   'Research scientist',
 ];
-// Interests reflect each handwritten biography, with deterministic secondary hobbies.
+// Interests reflect each biography, with deterministic secondary hobbies.
 const interestPatterns = [
   /trail|hik|long walk/i,
   /photograph|camera/i,
